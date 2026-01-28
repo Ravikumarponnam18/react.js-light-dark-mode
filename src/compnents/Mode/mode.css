@@ -1,0 +1,87 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* PAGE BACKGROUND */
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s ease;
+}
+
+/* LIGHT MODE */
+.page.light {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+}
+
+/* DARK MODE */
+.page.dark {
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+/* CARD */
+.card {
+  width: 420px;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  transition: all 0.6s ease;
+}
+
+/* MODE LABEL */
+.mode-indicator {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* TITLE */
+.title {
+  margin-top: 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #facc15;
+}
+
+/* SUBTITLE */
+.subtitle {
+  margin: 15px 0 30px;
+  font-size: 15px;
+  color: #4578df;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.toggle-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 25px rgba(249, 115, 22, 0.5);
+}
+
+/* BUTTON HOVER */
+.toggle-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(249, 115, 22, 0.8);
+}
+
+/* BUTTON ACTIVE */
+.toggle-btn:active {
+  transform: scale(0.97);
+}
